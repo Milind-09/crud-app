@@ -1,0 +1,67 @@
+{
+  "userData": [
+    {
+      "id": 0,
+      "userName": "Phoenix Baker",
+      "userId": "phoenix@usetrinity.com",
+      "status": "active",
+      "role": "admin",
+      "lastLoginDate": "July 20 2022",
+      "lastLoginTime": "6:50 PM"
+    },
+    {
+        "id": 1,
+        "userName": "Lana Steiner",
+        "userId": "lanar@usetrinity.com",
+        "status": "Invited",
+        "role": "Sales Leader",
+        "lastLoginDate": "July 20 2022",
+        "lastLoginTime": "6:50 PM"
+      },
+      {
+        "id": 2,
+        "userName": "Demi Wilkinson",
+        "userId": "demi@usetrinity.com",
+        "status": "active",
+        "role": "Sales Leader",
+        "lastLoginDate": "July 20 2022",
+        "lastLoginTime": "6:50 PM"
+      },
+      {
+        "id": 3,
+        "userName": "Candice Wu",
+        "userId": "candice@usetrinity.com",
+        "status": "Invited",
+        "role": "Sales Leader",
+        "lastLoginDate": "July 20 2022",
+        "lastLoginTime": "6:50 PM"
+      },
+      {
+        "id": 4,
+        "userName": "Natali Craig",
+        "userId": "natali@usetrinity.com",
+        "status": "active",
+        "role": "Sales Rep",
+        "lastLoginDate": "July 20 2022",
+        "lastLoginTime": "6:50 PM"
+      },
+      {
+        "id": 5,
+        "userName": "Drew Cano",
+        "userId": "drew@usetrinity.com",
+        "status": "active",
+        "role": "Sales Rep",
+        "lastLoginDate": "July 20 2022",
+        "lastLoginTime": "6:50 PM"
+      },
+      {
+        "id": 6,
+        "userName": "Orlando Digs",
+        "userId": "orlando@usetrinity.com",
+        "status": "active",
+        "role": "Sales Rep",
+        "lastLoginDate": "July 20 2022",
+        "lastLoginTime": "6:50 PM"
+      }
+  ]
+}

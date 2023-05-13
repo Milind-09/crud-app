@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.titleContainer{
+display: flex;
+align-items: center;
+padding: 10px;
+}
+.topContainer{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.userStyle{
+    padding: 0 10px;
+    margin: 0 10px;
+    color: rgb(120, 160, 140);
+    font-weight: 600;
+    background-color: rgb(240, 250, 245);
+}
+.descriptionStyle{
+    margin: 0 10px;
+    color: gray;
+}
+.btnDownload{
+    padding: 7px 12px;
+    background-color: white;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnAddUser{
+    padding: 7px 12px;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: rgb(87, 134, 234);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btnContainer{
+ margin-left: 30%;
+}
+.titleAlign{
+    display: flex;
+  
+}
+.downArrowContainer{
+    display: flex;
+    align-items: flex-end;
+    color: gray;
+    font-weight: 400;
+}
+.checkbox{
+    margin: 0 5px;
+}
+.nameContainer{
+    display: flex;
+    align-items: center;
+}
+
+  .tableTitleContainer{
+    display: flex;
+    /* justify-content: space-evenly; */
+    text-align: left;
+color: gray;
+  }
+  .listContainer{
+    display: flex;
+    /* justify-content: space-evenly; */
+    text-align: left;
+    align-items: center;
+    padding: 20px 5px;
+    /* background-color: gray; */
+  }
+  .editDelContainer{
+    display: flex;
+    align-items: center;
+  }
+.rowStyle{
+  min-width: 300px;
+  max-width: auto;
+}
+.mainTableContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.grayColor{
+  color: gray;
+}
+.activeStatus{
+  color: rgb(120, 160, 140);
+    font-weight: 600;
+   
+}
+.mainContainer{
+  margin: 1% 14%;
+  
+}
+.editIcon, .deleteIcon{
+  cursor: pointer;
+  background: none;
+  border: none;
+ font-size: 18px;
+}
