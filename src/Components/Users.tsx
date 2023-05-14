@@ -12,6 +12,7 @@ function Users() {
     const [userData, setUserData] = useState([])
     const [errMsg, setErrMsg] = useState("")
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [editModalIsOpen, setIsEditOpen] = useState(false);
     const [editId, setEditId] = useState(0)
     const [startPage, setStartPage] = useState(0)
     const [addUserData, setAddUserData] = useState({
@@ -48,6 +49,18 @@ function Users() {
 
     function openModal() {
         setIsOpen(true);
+       setAddUserData({
+        userName: "",
+        userId: "",
+        status: "",
+        role: "",
+        date: "",
+        time: ""
+       })
+    }
+    function openEditModal() {
+        setIsEditOpen(true);
+       
     }
 
 
@@ -55,6 +68,12 @@ function Users() {
         setIsOpen(false);
 
     }
+
+    function closeEditModal() {
+        setIsEditOpen(false);
+
+    }
+
     function onTextFieldChange(e: any) {
         const { name, value } = e.target;
 
@@ -79,15 +98,23 @@ function Users() {
     }
 
     function editUser(id: number) {
-        openModal()
+        openEditModal()
         setEditId(id)
+        setAddUserData({
+            userName: "",
+            userId: "",
+            status: "",
+            role: "",
+            date: "",
+            time: ""
+           })
     }
 
     function submitEditData() {
         axios.put('http://localhost:3000/userData/' + editId, addUserData).then((res) => {
             console.log(res.data);
             getUserList();
-            setIsOpen(false)
+            setIsEditOpen(false)
         }).catch((error) => {
             console.log(error);
 
@@ -219,9 +246,9 @@ function Users() {
                 </Modal>
 
                 <Modal
-                    isOpen={modalIsOpen}
+                    isOpen={editModalIsOpen}
                     className="modalStyle"
-                    onRequestClose={closeModal}
+                    onRequestClose={closeEditModal}
                 >
                     <div className='formContainer'>
                         <div>
